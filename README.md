@@ -9,4 +9,4 @@ HTML | CSS
 
 ## Overview
 
-I made this Intro Component with SignUp Form as a challenge by frontend mentor using CSS and HTML. The page is fully Responsive.
+I made this Intro Component with SignUp Form as a challenge by frontend mentor using CSS and HTML. The Page is responsive for mobiles and desktop screens.
