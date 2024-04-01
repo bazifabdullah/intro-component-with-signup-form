@@ -67,7 +67,7 @@ body {
     font-weight: 700;
 }
 
-.signup-form {
+.form-control {
     background-color: white;
     border-radius: 10px;
     padding: 20px;
@@ -76,20 +76,20 @@ body {
     display: grid;
 }
 
-.signup-form input {
+.form-control div {
+    width: 100%;
+}
+
+.form-control input {
     height: 48px;
     border-radius: 5px;
     border: 1px solid lightgray;
     padding-left: 15px;
-    font-weight: 600;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
-.data {
-    background: url('images/icon-error.svg') no-repeat;
-    background-position: 98% 50%;
-}
-
-.signup-form input:focus {
+.form-control input:focus {
     outline: none;
 }
 
@@ -113,31 +113,39 @@ body {
     top: 2px;
 }
 
-.signup-form p {
+.form-control p {
     margin-top: 5px;
     font-size: 0.65rem;
     text-align: center;
     color: var(--gray-blue);
 }
 
-.signup-form p span {
+.form-control p span {
     color: var(--red);
     font-weight: 600;
     font-size: 0.7rem;
 }
 
-.free-trial, .signup-form {
+.free-trial, .form-control {
     box-shadow: 0px 5px rgba(0, 0, 0, 0.15);
 }
 
-
 /* Error */
 
-.error-msg {
+.error {
+    border: 2px solid var(--red);
+    background: url('images/icon-error.svg') no-repeat;
+    background-position: 96% 50%;
+}
+
+.error-text {
+    font-size: 12px;
     color: var(--red);
-    font-size: 14px;
-    margin: 5px 0 10px 0;
-    text-align: end;
+    display: block;
+    text-align: right;
+    margin-top: -15px;
+    margin-bottom: 20px;
+    margin-right: 5px;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -175,7 +183,7 @@ body {
         width: 85%;
     }
 
-    .signup-form {
+    .form-control {
         padding: 35px;
         row-gap: 20px;
     }
